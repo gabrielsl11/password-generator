@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="img-side">
+            <img src="src/img/security.svg">
+        </div>
+
+        <div class="pwd-side">
+            <h1>Password Generator</h1>
+
+            <div class="password-container">
+                <span id="password"></span>
+
+                <button id="copy"><i class="fa-solid fa-copy"></i></button>
+            </div>
+
+            <div class="generator-container">
+                <div class="input-field">
+                    <input type="number" id="length" name="length">
+
+                    <label for="length">
+                        Text length
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="checkbox" id="include_uppercase" name="include_uppercase">
+
+                    <label for="include_uppercase">
+                        Include uppercase
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="checkbox" id="include_lowercase" name="include_lowercase">
+
+                    <label for="include_lowercase">
+                        Include lowercase
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="checkbox" id="include_number" name="include_number">
+
+                    <label for="include_number">
+                        Include number
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="checkbox" id="include_special_character" name="include_special_character">
+
+                    <label for="include_special_character">
+                        Include special character
+                    </label>
+                </div>
+
+                <button id="generate">Generate</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="src/js/script.js"></script>
+
+</body>
+
+</html>
